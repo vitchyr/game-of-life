@@ -1,10 +1,8 @@
-from state import Episode
-
 class Episode:
-    def __init__(self, arrays):
+    def __init__(self, states):
         self.t = 0
-        self.arrays = arrays
-        self.max_t = len(arrays)
+        self.states = states
+        self.max_t = len(states)
         self.episode_is_done = False
         return
 
@@ -15,19 +13,19 @@ class Episode:
         self.t += 1
 
     def get_state(self):
-        array = self.arrays[self.t]
-        return State(array)
+        return self.states[self.t]
 
     def is_done(self):
         return self.episode_is_done
 
+    # Alternatively, just use Episode instance as a list
     def __iter__(self):
         return self
 
     def next(self):
         if self.t < self.max_t:
+            state = self.states[self.t]
             self.t += 1
-            array = self.arrays[self.t]
-            return State(array)
+            return state
         else:
             raise StopIteration()
