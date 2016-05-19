@@ -14,7 +14,7 @@
     const dataset = JSON.parse(data);
     const BOARD_HEIGHT = 8;
     const BOARD_WIDTH = 8;
-    const SQUARE_SIZE = 50; // pixels
+    const SQUARE_SIZE = 40; // pixels
 
     var expectedDataSet = getExpectedDataset(dataset);
     function getExpectedDataset(dataset) {

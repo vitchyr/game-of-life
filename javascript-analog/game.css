@@ -1,0 +1,12 @@
+.square {
+    stroke: green;
+    stroke-width: 1;
+}
+
+.board {
+    padding: 10px;
+}
+
+.board#results{
+    float: left;
+}
