@@ -33,7 +33,7 @@ def get_save_str_from_raw_array(raw_array):
 
 def remove_extra_column(array):
     """Skip every other column, starting after the first one."""
-    return array[:, 1::2]
+    return array[:, 1:-4:2]
 
 def reshape_array(array):
     """Convert 64xn to 8x8xn."""
