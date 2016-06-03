@@ -2,13 +2,11 @@
 Visualizer for [Conway's Game of
 Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
-The `javascript` folder is the one that matters. The `python` folder is some skeleton code for when I thought about doing it in Python.
-
 This was implemented for a Digitial VLSI course, in which we implemented
 Conway's Game of Life on a circuit. We then ran our simulations through the
 ircuit and exported the results to a CSV file. The code in this repo first
 converts this data to a JSON object (see
-[javascript/csv\_to\_js.py](javascript/csv_to_js.py).
+[javascript/csv\_to\_js.py](javascript/csv_to_js.py)).
 
 After this script is run (see instructions below), the results and the expected
 results can be compared by opening javascript/index.html in a browser. Note that
@@ -17,8 +15,11 @@ is a screenshot of the resulting browser:
 
 ![Screenshot of visualizer](visualizer.gif)
 
+The `javascript` folder is the one that matters. The `python` folder is some
+skeleton code for when I thought about doing it in Python.
 ## Prerequisites
-To open the visualizer, you need Google Chrome and an internet connection. It should work on other browsers, but they're not tested.
+To open the visualizer, you need Google Chrome and an internet connection. It
+should work on other browsers, but they're not tested.
 
 To load new data, you need `python` and `numpy` installed.
 
